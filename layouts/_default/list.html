@@ -1,0 +1,12 @@
+{{ partial "head.html" . }}
+
+  <div class="container" align="center">
+  {{ range .Data.Pages }}
+    <p>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a> {{ partial "sep.html" . }}
+      {{ .Date.Format "2 Jan 2006" }}
+    </p>
+  {{ end }}
+  </div>
+
+{{ partial "foot.html" . }}

@@ -1,0 +1,9 @@
+{{ partial "head.html" . }}
+
+<div class="container-sm">
+  <h3>{{ .Title | upper }}</h3>
+  {{ .Content }}
+</div>
+<hr>
+
+{{ partial "foot.html" . }}

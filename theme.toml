@@ -1,0 +1,12 @@
+name = "goose"
+license = "MIT"
+licenselink = "https://github.com/ryfrd/hugo-goose/blob/master/LICENSE"
+description = ""
+homepage = "https://github.com/ryfrd/hugo-goose"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "James McLaren"
+  homepage = "https://jdysmcl.xyz"

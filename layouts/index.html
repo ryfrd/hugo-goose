@@ -1,0 +1,10 @@
+{{ partial "head.html" . }}
+
+  {{ range .Site.RegularPages }}
+  <h4><a href="{{ .RelPermalink }}">{{ .Title | upper }}</a></h4>
+  <date>{{ .Date.Format "2 Jan 2006" }}</date>
+  <p>{{ .Summary }}</p>
+  <hr>
+  {{ end }}
+
+{{ partial "foot.html" . }}

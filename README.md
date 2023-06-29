@@ -1,2 +1,1 @@
 # hugo-goose
-# hugo-goose
