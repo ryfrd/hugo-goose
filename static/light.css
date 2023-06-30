@@ -10,6 +10,7 @@ button {
   background-color: var(--fg);
   color: var(--bg);
   border: none;
+  height:20px;
 }
 
 button:hover {

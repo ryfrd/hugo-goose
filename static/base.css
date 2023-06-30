@@ -3,6 +3,20 @@ body {
   color: var(--fg);
 }
 
+.foot {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.foot-left {
+  display: flex;
+}
+
+.foot-right {
+  display: flex;
+}
+
 a {
   color: var(--fg);
 }
