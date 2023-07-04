@@ -1,0 +1,9 @@
+@import url("core.css");
+
+:root {
+  --bg1: #32302f;
+  --bg2: #3c3836;
+  --fg1: #fbf1c7;
+  --fg2: #ebdbb2;
+  --ac: #b8bb26;
+}

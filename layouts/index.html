@@ -1,22 +1,23 @@
 {{ partial "head.html" . }}
 
-<div class="bio-container">
-  <div class="bio-left squishy">
+<div class="bio-container left-right">
+  <div class="bio-left left squishy">
     <p class="bio-content">This is a place for me to document bits and bobs I'm up to that interest me. Expect linux and self-hosting tinkering, some novice programming, and maybe the occasional recipe.</p>
   </div>
-  <div class="bio-right squishy">
+  <div class="right">
     <div class="squishy">
       {{ range .Site.Params.social }}
-        <a href="{{ .url }}">{{ .name }}</a>
+        <a href="{{ .link }}">{{ .name }}</a>
       {{ end}}
     </div>
   </div>
 </div>
 
 
-{{ range .Site.RegularPages | first 4 }}
+  <h4>Recent posts</h4>
+{{ range .Site.RegularPages | first 3 }}
   <div class="post-div squishy">
-  <h4><a href="{{ .RelPermalink }}">{{ .Title | upper }}</a></h4>
+  <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
   <date>{{ .Date.Format "2 Jan 2006" }}</date>
   <p>{{ .Summary }}</p>
   </div>

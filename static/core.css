@@ -1,11 +1,3 @@
-:root {
-  --bg1: #32302f;
-  --bg2: #3c3836;
-  --fg1: #fbf1c7;
-  --fg2: #ebdbb2;
-  --ac: #b8bb26;
-}
-
 /* global */
 
 body {
@@ -29,27 +21,31 @@ a:hover {
   padding: 10px;
 }
 
+.left-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+}
+
+.right {
+  display: flex;
+}
+
+
 /* nav */
 
 .nav {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  justify-content: space-between;
   padding: 10px;
-}
-
-.nav-left {
-  display: flex;
 }
 
 .nav-left-item {
   margin-right: 10px;
-}
-
-.nav-right {
-  display: flex;
 }
 
 .nav-right-item {
@@ -69,18 +65,11 @@ a:hover {
 /* bio */
 
 .bio-container {
-  display: flex;
-  justify-content: space-between;
   margin: 80px;
 }
 
 .bio-left {
-  display: flex;
   margin-right: 10px;
-}
-
-.bio-right {
-  display: flex;
 }
 
 /* body */

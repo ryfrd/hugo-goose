@@ -7,18 +7,18 @@
     <!-- icon -->
     <link rel="icon" href="/image/icon.webp" type="image/icon type" -->
     <!-- css -->
-    <link href="/style.css" rel="stylesheet" id="stylesheet">
+    <link href="/drk.css" rel="stylesheet" id="stylesheet">
     <title>{{ .Site.Title }}</title>
   </head>
   <body>
   <script src="/toggle.js"></script>
 
-  <div class="nav">
-    <div class="nav-left">
+  <div class="nav left-right">
+    <div class="left">
       <a href="/" class="title nav-left-item squishy">{{ .Site.Title }}</a>
-      <button id="themeButton" class="toggle-button nav-left-item squishy" onclick="toggle()">light</button>
+      <button id="themeButton" class="toggle-button nav-left-item squishy" onclick="toggleTheme()">light</button>
     </div>
-    <div class="nav-right">
+    <div class="right">
       {{ range .Site.Menus.main }}
         <a class="nav-right-item squishy" href="{{ .URL }}">{{ .Name }}</a>
       {{ end }}
