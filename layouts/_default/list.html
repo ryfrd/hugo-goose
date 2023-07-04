@@ -3,7 +3,7 @@
   <div class="container" align="center">
   {{ range .Data.Pages }}
     <p>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a> {{ partial "sep.html" . }}
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
       {{ .Date.Format "2 Jan 2006" }}
     </p>
   {{ end }}
