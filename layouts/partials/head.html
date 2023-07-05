@@ -11,15 +11,18 @@
     <title>{{ .Site.Title }}</title>
   </head>
   <body>
-  <script src="/toggle.js"></script>
+  <script src="https://kit.fontawesome.com/460d3298b2.js" crossorigin="anonymous"></script>
+  <script src="/tggl.js"></script>
 
   <div class="nav left-right">
     <div class="left">
       <a href="/" class="title nav-left-item squishy">{{ .Site.Title }}</a>
-      <button id="themeButton" class="toggle-button nav-left-item squishy" onclick="toggleTheme()">light</button>
+      <button id="themeButton" class="toggle-button nav-left-item squishy" onclick="toggleTheme()">
+<i class="fa-solid fa-circle-half-stroke"></i>
+      </button>
     </div>
     <div class="right">
-      {{ range .Site.Menus.main }}
+      {{ range .Site.Menus.nav }}
         <a class="nav-right-item squishy" href="{{ .URL }}">{{ .Name }}</a>
       {{ end }}
     </div>

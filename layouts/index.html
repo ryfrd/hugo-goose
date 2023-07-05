@@ -1,16 +1,13 @@
 {{ partial "head.html" . }}
 
-<div class="bio-container left-right">
-  <div class="bio-left left squishy">
-    <p class="bio-content">This is a place for me to document bits and bobs I'm up to that interest me. Expect linux and self-hosting tinkering, some novice programming, and maybe the occasional recipe.</p>
-  </div>
-  <div class="right">
-    <div class="squishy">
-      {{ range .Site.Params.social }}
-        <a href="{{ .link }}">{{ .name }}</a>
-      {{ end}}
-    </div>
-  </div>
+<div class="bio-container">
+  <!-- <img class="bio-pic" src="/image/icon.webp" alt="icon"> -->
+  <p class="bio-content">This is a place for me to document bits and bobs I'm up to that interest me. Expect linux and self-hosting tinkering, some novice programming, and maybe the occasional recipe.</p>
+  {{ range .Site.Params.social }}
+    <a href="{{ .link }}">
+      <i class="{{ .faCode }}" style="padding:5px;"></i>
+    </a>
+  {{ end}}
 </div>
 
 

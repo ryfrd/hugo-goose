@@ -1,0 +1,27 @@
+# this is an example config file
+# place in the root directory of your hugo site
+
+baseURL: 'https://jdysmcl.xyz/'
+languageCode: en-gb
+title: james mclaren
+theme: hugo-goose
+
+markup:
+  highlight:
+    codeFences: true
+    noClasses: true
+    style: gruvbox
+
+menu:
+  nav:
+  - name: all posts
+    url: /posts/
+  - name: topics
+    url: /tags/
+
+params:
+  social:
+  - name: rss
+    link: /index.xml
+  - name: github
+    link: https://github.com/ryfrd
