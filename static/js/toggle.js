@@ -1,21 +1,20 @@
 function toggleTheme() {
 
   var stylesheet = document.getElementById('stylesheet');
-  var themeButton = document.getElementById('themeButton');
 
-  if (stylesheet.getAttribute('href') === '/drk.css') {
+  if (stylesheet.getAttribute('href') === '/css/dark.css') {
 
     // update stylesheet
-    stylesheet.setAttribute('href', '/lght.css');
+    stylesheet.setAttribute('href', '/css/light.css');
     // store theme
-    localStorage.setItem('stylesheet', '/lght.css');
+    localStorage.setItem('stylesheet', '/css/light.css');
 
   } else {
 
     // update stylesheet
-    stylesheet.setAttribute('href', '/drk.css');
+    stylesheet.setAttribute('href', '/css/dark.css');
     // store theme
-    localStorage.setItem('stylesheet', '/drk.css');
+    localStorage.setItem('stylesheet', '/css/dark.css');
 
   }
 }

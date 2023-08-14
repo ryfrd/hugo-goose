@@ -1,5 +1,7 @@
-@import url("core.css");
+/* import common css */
+@import url("/css/base.css");
 
+/* define colors */
 :root {
   --bg1: #32302f;
   --bg2: #3c3836;
