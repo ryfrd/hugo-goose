@@ -1,10 +1,9 @@
 {{ partial "head.html" . }}
 
-<div class="container" align="center">
+<div class="container">
   {{ range .Data.Pages }}
-    <p>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      {{ .Date.Format "2 Jan 2006" }}
+    <p class="list-item squishy" align="center">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a> | {{ .Date.Format "2 Jan 2006" }}
     </p>
   {{ end }}
 </div>
